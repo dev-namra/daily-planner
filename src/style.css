@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+html{
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+body{
+    max-width: 100%;
+    height: 100vh;
+    background: #222;
+    padding: 24px;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.toprec{
+    display: flex;
+    width: 100%;
+    padding: 21px 0 21px;
+    align-items: center;
+    border-radius: 8px;
+    background: #282828;
+    margin-bottom: 24px;
+}
+
+.easytask{
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-left: 16px;
+}
+.sidenav{
+    width: 320px;
+    height: 750px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #282828;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 24px;
+
+}
+.lists{
+    margin: 0;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.ri-add-circle-fill{
+    color: #fff;
+}
+.listcontainer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 288px;
+    margin-top: 10px;
+}
+.listframe{
+    display: flex;
+    width: 100%;
+    padding: 10px 12px 10px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background: #222;
+}
+.listframe:hover{
+    background: #444;
+}
+
+.listitem{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+.listitem:hover{
+    font-weight: 600;
+}
+
+.sidenavbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #222;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #444;
+    background: url(/Resources/picture.png), lightgray 50% / cover no-repeat;
+    height: 40px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+}
+.name{
+    color: #FAFAFA;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    line-height: 1;
+}
+
+.contact{
+    color: #E0E0E0;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+main{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.addtask{
+    display: inline-flex;
+    padding: 12px 33px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #E1E1E1;
+    height: 36px;
+}
+.addtask p{
+    color: #111;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+.content{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 22px;
+    width: 80%;
+}
+.duetodaytasks{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.contentitems{
+    padding: 16px;
+    width: 98%;
+    height: 64px;
+    border-radius: 8px;
+    background: #282828;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
+
+.contentitem{
+    height: 64px;
+    border-radius: 8px;
+    background: #282828;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 36px;
+    gap: 10px;
+}
+
+.icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.contentitem p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.due{
+    width: 100%;
+    height: 32px;
+    background: #222;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+    margin-bottom: 0;
+}
+
+.due p{
+    color: #999;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.duetomorrowtasks{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
