@@ -9,123 +9,59 @@
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#222] p-2 md:p-4 w-full">
+<body class="bg-[#222] p-2 md:p-4 h-screen overflow-hidden">
     <!-- header -->
-    <header class="w-full">
-        <div class="flex items-center w-full p-2 md:p-4 bg-[#282828] rounded-md md:rounded-lg">
-            <h1 class="text-[#fff] text-base md:text-4xl">Easy Task</h1>
-        </div>
+    <header class="w-full p-2 md:p-4 bg-[#282828] rounded-md md:rounded-lg flex-none">
+        <h1 class="text-[#fff] text-base md:text-4xl">Easy Task</h1>
     </header>
 
-    <!-- aside -->
-    <aside class="w-1/5 h-[calc(100%-2rem)] bg-[#282828]">
-        <div class="asideTop">
-            <div class="flex justify-between items-center">
-                <h2 class="text-[#fff] text-sm md:text-lg">List</h2>
-                <i class="ri-add-circle-fill text-[#fff] text-sm md:text-lg"></i>
-            </div>
-            <ul id="list">
-                <li class="text-[#fff] text-sm md:text-base font-poppins flex justify-between items-center p-2 md:p-3 bg-[#222] border border-[#888] rounded-sm md:rounded-lg hover:bg-[#444]">College<i class="ri-delete-bin-5-line"></i></li>
-                <li class="text-[#fff] text-sm md:text-base font-poppins flex justify-between items-center p-2 md:p-3 bg-[#222] border border-[#888] rounded-sm md:rounded-lg hover:bg-[#444]">Groceries<i class="ri-delete-bin-5-line"></i></li>
-            </ul>
-        </div>
-    </aside>
-    <main>
-        <!-- The sidenav-->
-        <div class="sidenav">
-            <div class="sidenavbottom">  
-                <div class="profile">
-                    <div class="photo"></div>
+    <div class="flex gap-2 md:gap-4 h-[calc(100lvh-7rem)] w-full mt-2 overflow-hidden ">
+        <!-- aside -->
+        <aside class="w-2/5 md:w-1/5 bg-[#282828] flex flex-col justify-between p-2 md:p-4">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-[#fff] text-sm md:text-lg">List</h2>
+                    <i class="ri-add-circle-fill text-[#fff] text-sm md:text-lg"></i>
                 </div>
-                <div class="devnamra">
-                    <p class="name">devnamra<br><span class="contact">devnamra@outlook.com</span></p>
-                    <!--<p class="contact">devnamra@outlook.com</p>-->
-                </div>
-                <i class="ri-more-2-fill" style="font-size: 24px; color: #CCCCCC;"></i>
+                <ul id="list" class="w-full flex flex-col gap-2 overflow-hidden">
+                    <li class="text-[#fff] text-xs md:text-base font-poppins flex justify-between items-center p-1 md:p-3 bg-[#222] border border-[#888] rounded-sm md:rounded-lg hover:bg-[#444]">College<i class="ri-delete-bin-5-line"></i></li>
+                    <li class="text-[#fff] text-xs md:text-base font-poppins flex justify-between items-center p-1 md:p-3 bg-[#222] border border-[#888] rounded-sm md:rounded-lg hover:bg-[#444]">Groceries<i class="ri-delete-bin-5-line"></i></li>
+                </ul>
             </div>
-        </div>
+            <div class="flex justify-evenly items-center bg-[#222] rounded-md md:rounded-lg p-2 md:p-4">
+                <img class="h-6 md:h-10 w-6 md:w-10 rounded-full" src="./Resources/picture.png" alt="">
+                <p class="text-[#fafafa] font-poppins text-xs md:text-sm">devnamra<br><span class="text-[#e0e0e0] text-xs">devnamra@outlook.com</span></p>
+                <i class="ri-more-2-fill text-base md:text-2xl text-[#ccc]"></i>
+            </div>
+        </aside>
 
-        <!-- The content-->
-        <div class="content">
-            <!--add task button-->
-            <div class="addtask">
-                <i class="ri-add-line" style="font-size: 24px;"></i>
-                <p>Add Task</p>
+        <!-- main -->
+        <main class="w-3/5 md:w-4/5 bg-[#282828] flex flex-col p-2 md:p-4">
+            <div class="flex justify-end mb-4">
+                <button type="button" class="inline-flex py-1 md:py-3 px-3 md:px-8 bg-[#e1e1e1] rounded-md md:rounded-lg text-[#111] font-poppins text-sm md:text-base"><i class="ri-add-line"></i> Add Task</button>
             </div>
-            <div class="duetodaytasks">  
-                <div class="due">
-                    <p>Due Today</p>
-                </div>
-                <!--content itmes-->
-                <div class="contentitems">
-                    <div class="contentitem">
-                        <i class="ri-checkbox-blank-line" style="font-size: 32px; color: #CCCCCC;"></i>
-                        <p class="listitemcontent">Add references for the literature review</p>
-                    </div>
-                    <div class="icons">
-                        <i class="ri-pencil-line" style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i>
-                        <p style="font-size: 32px; color: #CCCCCC;">|</p>
-                        <i class="ri-close-circle-line"  style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i> 
-                    </div>
-                </div>
-    
-                <div class="contentitems">
-                    <div class="contentitem">
-                        <i class="ri-checkbox-blank-line" style="font-size: 32px; color: #CCCCCC;"></i>
-                        <p class="listitemcontent">Submit LR to the guide</p>
-                    </div>
-                    <div class="icons">
-                        <i class="ri-pencil-line" style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i>
-                        <p style="font-size: 32px; color: #CCCCCC;">|</p>
-                        <i class="ri-close-circle-line"  style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i> 
-                    </div>
-                </div>
-    
-                <div class="contentitems">
-                    <div class="contentitem">
-                        <i class="ri-checkbox-blank-line" style="font-size: 32px; color: #CCCCCC;"></i>
-                        <p class="listitemcontent">Write a mail for visa application</p>
-                    </div>
-                    <div class="icons">
-                        <i class="ri-pencil-line" style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i>
-                        <p style="font-size: 32px; color: #CCCCCC;">|</p>
-                        <i class="ri-close-circle-line"  style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i> 
+            <div class="w-full bg-[#222] p-2 md:p-4 mb-4">
+                <h2 class="text-[#999] font-poppins text-xs md:text-sm">Due Today</h2>
+                <div id="listItemContainer">
+                    <div id="itemX" class="flex justify-between p-2 md:p-3 rounded-md md:rounded-lg bg-[#222]">
+                        <div class="contentitem flex items-center gap-2">
+                            <i class="ri-checkbox-blank-line text-[#ccc] text-base md:text-2xl"></i>
+                            <p class="text-[#fff] text-base md:text-2xl">Add references for the literature review</p>
+                        </div>
+                        <div id="iconsEditandDelete" class="flex items-center gap-2">
+                            <i class="ri-pencil-line text-base md:text-xl text-[#ccc] cursor-pointer"></i>
+                            <p class="text-base md:text-xl text-[#ccc]">|</p>
+                            <i class="ri-close-circle-line text-base md:text-xl text-[#ccc] cursor-pointer"></i> 
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="duetomorrowtasks">  
-                <div class="due">
-                    <p>Due Tomorrow</p>
-                </div>
-                <!--content itmes-->
-                <div class="contentitems">
-                    <div class="contentitem">
-                        <i class="ri-checkbox-blank-line" style="font-size: 32px; color: #CCCCCC;"></i>
-                        <p class="listitemcontent">Follow up with the guide </p>
-                    </div>
-                    <div class="icons">
-                        <i class="ri-pencil-line" style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i>
-                        <p style="font-size: 32px; color: #CCCCCC;">|</p>
-                        <i class="ri-close-circle-line"  style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i> 
-                    </div>
-                </div>
-    
-                <div class="contentitems">
-                    <div class="contentitem">
-                        <i class="ri-checkbox-blank-line" style="font-size: 32px; color: #CCCCCC;"></i>
-                        <p class="listitemcontent">Start working on case study</p>
-                    </div>
-                    <div class="icons">
-                        <i class="ri-pencil-line" style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i>
-                        <p style="font-size: 32px; color: #CCCCCC;">|</p>
-                        <i class="ri-close-circle-line"  style="font-size: 24px; color: #CCCCCC; cursor: pointer;"></i> 
-                    </div>
-                </div>
+            <div class="w-full bg-[#222] p-2 md:p-4">
+                <h2 class="text-[#999] font-poppins text-xs md:text-sm">Due Tomorrow</h2>
             </div>
-        </div> 
-    </main>
+        </main>
+    </div>
 </body>
 </html>
